@@ -1,14 +1,8 @@
 import java.util.*;
 
 public class Set {
-	private ArrayList<String> set = new ArrayList<String>(); // in order to
-																// maintain
-																// mutability,
-																// it creates an
-																// ArrayList
-																// because their
-																// size is
-																// scalable
+	private ArrayList<String> set = new ArrayList<String>(); 
+	// in order to maintain mutability, it creates an ArrayList because their size is scalable
 
 	Set(String[] x) { // constructor for the ADT will take an array of strings
 		for (int i = 0; i < x.length; i++) {
@@ -101,8 +95,41 @@ public class Set {
 		} // end for
 		return true;
 	}
-
+	
+	public int getCardinality(){
+		boolean check = true;
+		int count =0;
+		for(int i=0;i<this.getCount();i++){
+			System.out.println(count);
+			for(int j= i+1; j<this.getCount();j++){
+				System.out.println(this.set.get(i) + " " + this.set.get(j));
+				if (this.set.get(i)==this.set.get(j)){
+					check = false;
+				}
+			}
+			for(int j=0; j<i; j++){
+				System.out.println(this.set.get(i) + " " + this.set.get(j));
+				if (this.set.get(i)==this.set.get(j)){
+					check = false;
+				}
+			}
+			if(check){
+				count ++;
+			}
+			else{
+				check = true;
+			}
+		}
+		return count;
+	}
+	
+	
 	public String toString() {
-		return this.set + " ";
+		String setStr ="";
+		for(int i=0;i<this.getCount()-1;i++){
+			setStr += this.set.get(i) + ",";
+		}
+		setStr += this.set.get(this.getCount()-1);
+		return "{"+ setStr + "}";
 	}
 }
