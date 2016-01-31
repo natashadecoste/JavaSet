@@ -16,19 +16,23 @@ public class Set {
 
 	public ArrayList<String> Union(Set that) {
 		ArrayList<String> union = new ArrayList<String>();
-		for (int i = 0; i < this.getCount(); i++) {
-			if (that.set.contains(this.set.get(i))) {
-				// do nothing, we will add it later from that.set
-			} else {
-				union.add(this.set.get(i)); // this is exclusive to this.set so
-											// we add it to the union
-			}
-		} // close first for loop
-
-		for (int i = 0; i < that.getCount(); i++) {
-			union.add(that.set.get(i)); // adding all the items from that.set
+		if(this.getCount() == 0){
+			return that.set;
 		}
+		else{
+			for (int i = 0; i < this.getCount(); i++) {
+				if (that.set.contains(this.set.get(i))) {
+					// do nothing, we will add it later from that.set
+				} else {
+					union.add(this.set.get(i)); // this is exclusive to this.set so
+												// we add it to the union
+				}
+			} // close first for loop
 
+			for (int i = 0; i < that.getCount(); i++) {
+				union.add(that.set.get(i)); // adding all the items from that.set
+			}
+		}
 		return union;
 
 	}
@@ -38,7 +42,7 @@ public class Set {
 
 		for (int i = 0; i < this.getCount(); i++) {
 			for (int j = 0; j < that.getCount(); j++) {
-				if (this.set.get(i) == that.set.get(j)) {
+				if (this.set.get(i).equals(that.set.get(j))) {
 					intersection.add(that.set.get(j));
 				} // close if statement
 			} // close second for loop
@@ -60,11 +64,13 @@ public class Set {
 		return difference;
 	}
 
-	public ArrayList<String[]> Product(Set that) {
-		ArrayList<String[]> product = new ArrayList<String[]>();
+	public ArrayList<String> Product(Set that) {
+		ArrayList<String> product = new ArrayList<String>();
+		String temp;
 		for (int i = 0; i < this.getCount(); i++) {
 			for (int j = 0; j < that.getCount(); j++) {
-				product.add(new String[] { this.set.get(i), that.set.get(j) });
+				temp = this.set.get(i)+that.set.get(j);
+				product.add(temp);
 			} // close second for loop
 		} // close first for loop
 		return product;
@@ -100,16 +106,14 @@ public class Set {
 		boolean check = true;
 		int count =0;
 		for(int i=0;i<this.getCount();i++){
-			System.out.println(count);
 			for(int j= i+1; j<this.getCount();j++){
-				System.out.println(this.set.get(i) + " " + this.set.get(j));
-				if (this.set.get(i)==this.set.get(j)){
+				if (this.set.get(i).equals(this.set.get(j))){
 					check = false;
 				}
 			}
 			for(int j=0; j<i; j++){
 				System.out.println(this.set.get(i) + " " + this.set.get(j));
-				if (this.set.get(i)==this.set.get(j)){
+				if (this.set.get(i).equals(this.set.get(j))){
 					check = false;
 				}
 			}
