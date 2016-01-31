@@ -1,0 +1,350 @@
+Union test number 1
+Set R: {1,2,3}
+Set S: {1}
+Union of R & S: [2,3,1]
+Test case passed.
+
+Union test number 2
+Set R: {}
+Set S: {1,1}
+Union of R & S: [1]
+Test case passed.
+
+Union test number 3
+Set R: {2}
+Set S: {}
+Union of R & S: [2]
+Test case passed.
+
+Union test number 4
+Set R: {2,2,1}
+Set S: {2,1}
+Union of R & S: [2,1]
+Test case passed.
+
+Union test number 5
+Set R: {3,3,1}
+Set S: {2}
+Union of R & S: [3,1,2]
+Test case passed.
+
+Union test number 6
+Set R: {3,3,3}
+Set S: {3,3,3}
+Union of R & S: [3]
+Test case passed.
+
+Union test number 7
+Set R: {}
+Set S: {}
+Union of R & S: []
+Test case passed.
+
+Intersection test number 1
+Set R: {1,2,3}
+Set S: {1}
+Intersection of R & S: [1]
+Test case passed.
+
+Intersection test number 2
+Set R: {}
+Set S: {1,1}
+Intersection of R & S: []
+Test case passed.
+
+Intersection test number 3
+Set R: {2}
+Set S: {}
+Intersection of R & S: []
+Test case passed.
+
+Intersection test number 4
+Set R: {2,2,1}
+Set S: {2,1}
+Intersection of R & S: [2,1]
+Test case passed.
+
+Intersection test number 5
+Set R: {3,3,1}
+Set S: {2}
+Intersection of R & S: []
+Test case passed.
+
+Intersection test number 6
+Set R: {3,3,3}
+Set S: {3,3,3}
+Intersection of R & S: [3]
+Test case passed.
+
+Intersection test number 7
+Set R: {}
+Set S: {}
+Intersection of R & S: []
+Test case passed.
+
+Difference test number 1
+Set R: {1,2,3}
+Set S: {1}
+Intersection of R & S: [2,3]
+Test case passed.
+
+Difference test number 2
+Set R: {}
+Set S: {1,1}
+Intersection of R & S: []
+Test case passed.
+
+Difference test number 3
+Set R: {2}
+Set S: {}
+Intersection of R & S: [2]
+Test case passed.
+
+Difference test number 4
+Set R: {2,2,1}
+Set S: {2,1}
+Intersection of R & S: []
+Test case passed.
+
+Difference test number 5
+Set R: {3,3,1}
+Set S: {2}
+Intersection of R & S: [3,3,1]
+Test case passed.
+
+Difference test number 6
+Set R: {3,3,3}
+Set S: {3,3,3}
+Intersection of R & S: []
+Test case passed.
+
+Difference test number 7
+Set R: {}
+Set S: {}
+Intersection of R & S: []
+Test case passed.
+
+Product test number 1
+Set R: {1,2,3}
+Set S: {1}
+Product of R X S: [11,21,31]
+Test case passed.
+
+Product test number 2
+Set R: {}
+Set S: {1,1}
+Product of R X S: []
+Test case passed.
+
+Product test number 3
+Set R: {2}
+Set S: {}
+Product of R X S: []
+Test case passed.
+
+Product test number 4
+Set R: {2,2,1}
+Set S: {2,1}
+Product of R X S: [22,21,22,21,12,11]
+Test case passed.
+
+Product test number 5
+Set R: {3,3,1}
+Set S: {2}
+Product of R X S: [32,32,12]
+Test case passed.
+
+Product test number 6
+Set R: {3,3,3}
+Set S: {3,3,3}
+Product of R X S: [33,33,33,33,33,33,33,33,33]
+Test case passed.
+
+Product test number 7
+Set R: {}
+Set S: {}
+Product of R X S: []
+Test case passed.
+
+isEqual test number 1
+Set R: {1,2,3}
+Set S: {1}
+It is NOT equal
+Test case passed.
+
+isEqual test number 2
+Set R: {}
+Set S: {1,1}
+It is NOT equal
+Test case passed.
+
+isEqual test number 3
+Set R: {2}
+Set S: {}
+It is NOT equal
+Test case passed.
+
+isEqual test number 4
+Set R: {2,2,1}
+Set S: {2,1}
+It IS equal
+Test case passed.
+
+isEqual test number 5
+Set R: {3,3,1}
+Set S: {2}
+It is NOT equal
+Test case passed.
+
+isEqual test number 6
+Set R: {3,3,3}
+Set S: {3,3,3}
+It IS equal
+Test case passed.
+
+isEqual test number 7
+Set R: {}
+Set S: {}
+It IS equal
+Test case passed.
+
+isSubset test number 1
+Set R: {1,2,3}
+Set S: {1}
+R is NOT subset of S
+Test case passed.
+
+isSubset test number 2
+Set R: {}
+Set S: {1,1}
+R IS a subset of S
+Test case passed.
+
+isSubset test number 3
+Set R: {2}
+Set S: {}
+R is NOT subset of S
+Test case passed.
+
+isSubset test number 4
+Set R: {2,2,1}
+Set S: {2,1}
+R IS a subset of S
+Test case passed.
+
+isSubset test number 5
+Set R: {3,3,1}
+Set S: {2}
+R is NOT subset of S
+Test case passed.
+
+isSubset test number 6
+Set R: {3,3,3}
+Set S: {3,3,3}
+R IS a subset of S
+Test case passed.
+
+isSubset test number 7
+Set R: {}
+Set S: {}
+R IS a subset of S
+Test case passed.
+
+getCount test number 1
+Set R: {1,2,3}
+Set R count =  3
+Test case passed.
+
+getCount test number 2
+Set R: {}
+Set R count =  0
+Test case passed.
+
+getCount test number 3
+Set R: {2}
+Set R count =  1
+Test case passed.
+
+getCount test number 4
+Set R: {2,2,1}
+Set R count =  3
+Test case passed.
+
+getCount test number 5
+Set R: {3,3,1}
+Set R count =  3
+Test case passed.
+
+getCount test number 6
+Set R: {3,3,3}
+Set R count =  3
+Test case passed.
+
+getCount test number 7
+Set R: {}
+Set R count =  0
+Test case passed.
+
+getCardinality test number 1
+Set R: {1,2,3}
+Set R Cardinality =  3
+Test case passed.
+
+getCardinality test number 2
+Set R: {}
+Set R Cardinality =  0
+Test case passed.
+
+getCardinality test number 3
+Set R: {2}
+Set R Cardinality =  1
+Test case passed.
+
+getCardinality test number 4
+Set R: {2,2,1}
+Set R Cardinality =  2
+Test case passed.
+
+getCardinality test number 5
+Set R: {3,3,1}
+Set R Cardinality =  2
+Test case passed.
+
+getCardinality test number 6
+Set R: {3,3,3}
+Set R Cardinality =  1
+Test case passed.
+
+getCardinality test number 7
+Set R: {}
+Set R Cardinality =  0
+Test case passed.
+
+toString test number 1
+Set R: {1,2,3}
+Test case passed.
+
+toString test number 2
+Set R: {}
+Test case passed.
+
+toString test number 3
+Set R: {2}
+Test case passed.
+
+toString test number 4
+Set R: {2,2,1}
+Test case passed.
+
+toString test number 5
+Set R: {3,3,1}
+Test case passed.
+
+toString test number 6
+Set R: {3,3,3}
+Test case passed.
+
+toString test number 7
+Set R: {}
+Test case passed.
+
